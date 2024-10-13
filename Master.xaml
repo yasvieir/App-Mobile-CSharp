@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms&quot;
+      xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml&quot;
+      xmlns:page="clr-namespace:App1_Cell.Pagina"
+      x:Class="App1_Cell.Menu.Master">
+  <MasterDetailPage.Master>
+    <ContentPage Title="Menu">
+      <StackLayout BackgroundColor="DarkSlateGray">
+        <Button Text="TextCell" Clicked="GoPagina1" BorderColor="Blue"
+            TextColor="White" BackgroundColor="LightSlateGray" BorderRadius = "15" BorderWidth = "2"/>
+        <Button Text="ImageCell" Clicked="GoPagina2" BorderColor="Blue"
+            TextColor="White" BackgroundColor="LightSlateGray" BorderRadius = "15" BorderWidth = "2"/>
+      </StackLayout>
+    </ContentPage>
+  </MasterDetailPage.Master>
+  <MasterDetailPage.Detail>
+    <NavigationPage>
+      <x:Arguments>
+        <page:TextCellPage/>
+      </x:Arguments>
+    </NavigationPage>
+  </MasterDetailPage.Detail>
+</MasterDetailPage>
